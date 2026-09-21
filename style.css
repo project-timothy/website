@@ -6,6 +6,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--tm-bg);
   color: var(--tm-text);
   font-family: var(--tm-font-product);
@@ -13,6 +14,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
+img { max-width: 100%; }
 
 .wrap {
   max-width: 1040px;
@@ -100,6 +103,9 @@ header.site {
 /* Hero */
 .hero {
   padding: 88px 0 64px;
+}
+
+.hero .wrap {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 56px;
@@ -126,7 +132,6 @@ header.site {
 }
 
 .hero h1 {
-  font-size: var(--tm-space-8, 64px);
   font-size: clamp(34px, 5vw, 52px);
   margin-bottom: var(--tm-space-4);
 }
@@ -387,8 +392,13 @@ footer {
 .footer-links a { text-decoration: none; color: var(--tm-text-2); }
 .footer-links a:hover { color: var(--tm-text); }
 
+@media (max-width: 900px) {
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding-top: 56px; }
+  .hero { padding-top: 56px; }
+  .hero .wrap { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
   .values-grid { grid-template-columns: 1fr; }
   .help-grid { grid-template-columns: 1fr; }
