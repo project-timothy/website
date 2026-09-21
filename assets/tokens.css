@@ -1,0 +1,49 @@
+:root {
+  --tm-ink: #16233F;
+  --tm-lamp: #D3A24B;
+  --tm-sand: #FAF6EE;
+  --tm-paper: #FFFFFF;
+  --tm-slate: #55617A;
+  --tm-clay: #BE6A45;
+  --tm-sage: #74815F;
+  --tm-alert: #B4432E;
+  --tm-hairline: #E6E0D2;
+
+  /* semantic, light */
+  --tm-bg: var(--tm-sand);
+  --tm-surface: var(--tm-paper);
+  --tm-text: var(--tm-ink);
+  --tm-text-2: var(--tm-slate);
+  --tm-rule: var(--tm-hairline);
+  --tm-accent: var(--tm-lamp);
+  --tm-ok: var(--tm-sage);
+  --tm-soon: var(--tm-clay);
+  --tm-wrong: var(--tm-alert);
+
+  --tm-font-editorial: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --tm-font-product: Inter, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --tm-font-code: 'JetBrains Mono', Menlo, Consolas, monospace;
+  --tm-space-1: 4px;
+  --tm-space-2: 8px;
+  --tm-space-3: 12px;
+  --tm-space-4: 16px;
+  --tm-space-5: 24px;
+  --tm-space-6: 32px;
+  --tm-space-7: 48px;
+  --tm-space-8: 64px;
+  --tm-radius-control: 8px;
+  --tm-radius-card: 12px;
+  --tm-radius-panel: 16px;
+  --tm-radius-icon: 22%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tm-bg: #0B1526;
+    --tm-surface: #121F38;
+    --tm-text: #F3EFE4;
+    --tm-text-2: #A9B2C9;
+    --tm-rule: #1F2D4A;
+    --tm-accent: #E3B563;
+  }
+}
