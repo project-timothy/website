@@ -121,6 +121,7 @@ section.tight { padding: 56px 0; }
 .leads li { padding: 0 0 14px; font-size: 15.5px; color: var(--tm-text-2); line-height: 1.5; }
 .leads li strong { color: var(--tm-text); font-weight: 600; }
 .leads.wide { max-width: 76ch; margin-bottom: 40px; }
+.leads.wide.last { margin-bottom: 0; }
 .leads.wide li { font-size: 16px; }
 
 .banner {
